@@ -1,0 +1,11 @@
+<h1><%= @property.address %></h1>
+
+<p>Property type: <%= @property.home_type %></p>
+<p>Address: <%= @property.address %></p>
+<p>Ocupancy: <%= @property.total_occupancy %></p>
+<p>Price per day: <%= @property.price %></p>
+<p>Details: <%= @property.summary %></p>
+
+<%= link_to "Back to properties", properties_path %>
+
+<%# create a reservation btn %>

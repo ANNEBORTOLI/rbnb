@@ -1,4 +1,7 @@
 <h1>Properties Page</h1>
 
-<p>should display all the properties based on the search</p>
-<p>btn reserve</p>
+<ul>
+  <% @properties.each do |property| %>
+    <li><%= link_to property.address, property %></li>
+  <% end %>
+</ul>
