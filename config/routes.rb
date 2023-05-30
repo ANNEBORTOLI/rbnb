@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: "pages#home"
-  get "/about", to: "pages#about"
+  root to: "properties#index"
+
+  resources :properties do
+    resources :reservations, except: :destroy
+  end
+  resources :reservations, only: :destroy
 end
