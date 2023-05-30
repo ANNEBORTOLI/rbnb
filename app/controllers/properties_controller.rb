@@ -1,5 +1,26 @@
 class PropertiesController < ApplicationController
-  before_action :set_property, only: %i[edit, update, destroy]
+  before_action :set_property, only: %i[show edit update destroy]
+
+  def index
+    @properties = Property.all
+  end
+
+  def show
+  end
+
+  def new
+    @property = Property.new
+  end
+
+  def create
+    @property = Property.new(property_params)
+    @property.user = current_user
+    if @property.save
+      redirect_to @property
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
 
   def edit
   end
@@ -12,6 +33,10 @@ class PropertiesController < ApplicationController
     end
   end
 
+  def destroy
+    @property.destroy
+    redirect_to root_path
+  end
 
   private
 

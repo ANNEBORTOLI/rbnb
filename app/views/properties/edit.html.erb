@@ -1,0 +1,13 @@
+<h1>Edit a new Property</h1>
+
+<%= simple_form_for @property do |f| %>
+  <%= f.input :home_type %>
+  <%= f.input :total_occupancy %>
+  <%= f.input :address %>
+  <%= f.input :price %>
+  <%= f.input :summary %>
+  <%= f.submit %>
+<% end %>
+
+<hr>
+<%= link_to "Back to property", property_path %>
