@@ -39,6 +39,10 @@ class PropertiesController < ApplicationController
     redirect_to root_path
   end
 
+  def set_properties
+    @properties = Property.where(user: current_user)
+  end
+
   private
 
   def set_property
@@ -49,4 +53,5 @@ class PropertiesController < ApplicationController
   def property_params
     params.require(:property).permit(:home_type, :total_occupancy, :address, :price, :summary)
   end
+
 end
