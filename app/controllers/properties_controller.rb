@@ -1,4 +1,5 @@
 class PropertiesController < ApplicationController
+  skip_before_action :authenticate_user!, only: %i[home index show]
   before_action :set_property, only: %i[show edit update destroy]
 
   def index
