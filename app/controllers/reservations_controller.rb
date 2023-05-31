@@ -2,10 +2,6 @@ class ReservationsController < ApplicationController
   before_action :set_property, only: %i[new create]
   before_action :set_reservation, only: %i[show edit update destroy]
 
-  # validates :start_date, comparison: { greater_than_or_equal_to: Date.today }
-  # validates :end_date, comparison: { greater_than: :start_date }
-
-  # http://127.0.0.1:3000/properties/6/reservations/1
   def show
   end
 
