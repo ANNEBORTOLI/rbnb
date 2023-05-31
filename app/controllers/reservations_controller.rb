@@ -1,6 +1,6 @@
 class ReservationsController < ApplicationController
-  before_action :find_property, only: %i[new create]
-  before_action :find_reservation, only: %i[show edit update destroy]
+  before_action :set_property, only: %i[new create]
+  before_action :set_reservation, only: %i[show edit update destroy]
 
   # validates :start_date, comparison: { greater_than_or_equal_to: Date.today }
   # validates :end_date, comparison: { greater_than: :start_date }
@@ -29,17 +29,22 @@ class ReservationsController < ApplicationController
     redirect_to @reservation
   end
 
+  def set_reservations
+    @reservations = Reservation.where(user: current_user)
+  end
+
   private
 
-  def find_property
+  def set_property
     @property = Property.find(params[:property_id])
   end
 
-  def find_reservation
+  def set_reservation
     @reservation = Reservation.find(params[:id])
   end
 
   def reservation_params
     params.require(:reservation).permit(:start_date, :end_date)
   end
+
 end
