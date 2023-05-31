@@ -1,11 +1,14 @@
-<h1><%= @property.address %></h1>
+<h1>TODO: add property title</h1>
 
-<p>Property type: <%= @property.home_type %></p>
+<p>TODO: add property img</p>
+<p>Property type: <%= @property.home_type %> hosted by "user first_name user_last_name"</p>
 <p>Address: <%= @property.address %></p>
 <p>Ocupancy: <%= @property.total_occupancy %></p>
 <p>Price per day: <%= @property.price %></p>
 <p>Details: <%= @property.summary %></p>
 
-<%= link_to "Back to properties", properties_path %>
+<%= link_to "Book Now", new_property_reservation_path(@property) %>
 
-<%# create a reservation btn %>
+
+<hr>
+<%= link_to "Back to properties", properties_path %>

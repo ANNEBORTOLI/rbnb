@@ -1,6 +1,13 @@
 class ReservationsController < ApplicationController
   before_action :find_property, only: %i[new create]
-  before_action :find_reservation, only: %i[edit update destroy]
+  before_action :find_reservation, only: %i[show edit update destroy]
+
+  # validates :start_date, comparison: { greater_than_or_equal_to: Date.today }
+  # validates :end_date, comparison: { greater_than: :start_date }
+
+  # http://127.0.0.1:3000/properties/6/reservations/1
+  def show
+  end
 
   def new
     @reservation = Reservation.new
@@ -11,14 +18,10 @@ class ReservationsController < ApplicationController
     @reservation.property = @property
     @reservation.user = current_user
     if @reservation.save
-      redirect_to @reservation, notice: 'Reservation created successfully.'
+      redirect_to properties_path
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
-  end
-  # calculate the number of days and multoiple by the property price
-
-  def edit
   end
 
   def destroy
