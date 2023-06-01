@@ -1,0 +1,15 @@
+<h1><%= @property.title %></h1>
+
+<%= image_tag @property.image_url, class: "card-img-top", width: 50, height: 180 %>
+
+<p>Property type: <%= @property.home_type %> hosted by "user first_name user_last_name"</p>
+<p>Address: <%= @property.address %></p>
+<p>Ocupancy: <%= @property.total_occupancy %></p>
+<p>Price per day: <%= @property.price %></p>
+<p>Details: <%= @property.summary %></p>
+
+<%= link_to "Book Now", new_property_reservation_path(@property) %>
+
+
+<hr>
+<%= link_to "Back to properties", properties_path %>

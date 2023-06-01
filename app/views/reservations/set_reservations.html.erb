@@ -1,0 +1,8 @@
+<h1>User Reservations</h1>
+
+<ul>
+<% @reservations.each do |reservation| %>
+  <li>Start Date: <%= reservation.start_date %></li>
+  <li>Start Date: <%= reservation.end_date %></li>
+<% end %>
+</ul>
