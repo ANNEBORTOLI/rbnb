@@ -18,7 +18,7 @@ class ReservationsController < ApplicationController
     days = (@reservation.end_date - @reservation.start_date).to_i
     @reservation.total_price = @property.price * days
     if @reservation.save
-      redirect_to reservation_path(@reservation)
+      redirect_to reservation_path([@reservation, @property])
     else
       render :new, status: :unprocessable_entity
     end
