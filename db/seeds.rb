@@ -46,7 +46,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "Copacabana, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Imovel luxuoso com vista para o mar",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
@@ -59,7 +59,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "Ipanema, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Apartamento maravilhoso em Ipa",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
@@ -72,7 +72,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "Lagoa, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Cobertura na Lagoa Rodrigo de Freitas",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
@@ -85,7 +85,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "Jardim Botânico, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Jardim Botânico, pertinho do Parque Lage",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
@@ -98,7 +98,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "Peixoto, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Linda propriedade no bairro Peixoto em Copacabana",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
@@ -111,7 +111,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "Barra da Tijuca, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Fique perto da praia mais gostosa do Rio!",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
@@ -124,7 +124,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "Leme, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Apartamento aconchegante no Leme",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
@@ -137,7 +137,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "São Conrado, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Apartamento em São Conrado",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
@@ -150,7 +150,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "Botafogo, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Apartamento funcional em Botafogo",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
@@ -163,7 +163,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "Catete, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Flat, próximo ao metrô",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
@@ -176,7 +176,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "Flamengo, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Cobertura duplex no Flamengo",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
@@ -189,7 +189,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "Largo do Machado, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Apartamento no melhor ponto do Largo do Machado",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
@@ -202,7 +202,7 @@ Property.create!(
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
   address: "Recreio dos Bandeirantes, Rio de Janeiro",
-  title: "Linda propriedade",
+  title: "Apartamento no Recreio dos Bandeirantes",
   price: rand(50..500),
   summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
   Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .

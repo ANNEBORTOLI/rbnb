@@ -51,7 +51,7 @@ class PropertiesController < ApplicationController
 
   # STRONG_PARAMS
   def property_params
-    params.require(:property).permit(:home_type, :total_occupancy, :address, :price, :summary)
+    params.require(:property).permit(:home_type, :total_occupancy, :address, :price, :summary, :image_url, :title)
   end
 
 end
