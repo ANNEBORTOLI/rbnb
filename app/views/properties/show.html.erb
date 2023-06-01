@@ -1,9 +1,6 @@
-<h1>TODO: add property title</h1>
+<h1><%= @property.title %></h1>
 
-<p>TODO: add property img</p>
-
-<%= cl_image_tag("ge2drhz4bqzpgpgpomrh",
-      width: 400, height: 300, crop: :fill) %>
+<%= image_tag @property.image_url, class: "card-img-top", width: 50, height: 180 %>
 
 <p>Property type: <%= @property.home_type %> hosted by "user first_name user_last_name"</p>
 <p>Address: <%= @property.address %></p>
