@@ -1,6 +1,6 @@
 .card-trip {
   overflow: hidden;
-  background: white;
+  background: #FEFAE0 !important;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -8,6 +8,7 @@
   height: 200px;
   width: 100%;
   object-fit: cover;
+
 }
 
 .card-trip h2 {
@@ -33,6 +34,11 @@
 .card-trip-infos .card-trip-user {
   position: absolute;
   right: 16px;
-  top: -20px;
+  top: 10px;
   width: 40px;
+}
+
+.bg-color-card {
+  background-color: #FEFAE0 !important;
+  padding-top: 5px !important;
 }
