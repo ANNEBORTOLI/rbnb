@@ -1,8 +1,7 @@
 .card-body {
-  background-color:#FEFAE0 !important;
+  background-color: #fefae0 !important;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   padding-bottom: 5px !important;
-
 }
 .btn-primary {
   display: inline-block;
@@ -10,7 +9,7 @@
   border: 0;
   cursor: pointer;
   will-change: box-shadow, transform;
-  background: radial-gradient(100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100%);
+  background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
   padding: 0 32px;
   border-radius: 6px;
   color: #fff;
@@ -19,6 +18,4 @@
   transition: box-shadow 0.15s ease, transform 0.15s ease;
   text-align: center !important;
   padding-top: 10px !important;
-
-
- }
+}

@@ -4,10 +4,12 @@
       <div class="card justify-content-center m-1 bg-color-card" style="width: 20rem;">
         <%= image_tag property.image_url, class: "card-img-top", width: 286, height: 180 %>
         <div class="card-body">
-            <h6 class="card-title"><strong><%= property.address %></strong></h6>
-            <p class="card-text my-1"> Per night: <%= property.price %></p>
-            <p class="card-text"> Occupancy: <%= property.total_occupancy %></p>
-            <%= link_to "See details",  property, class: "d-flex btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-3 rounded-3" %>
+            <h4 class="card-title"><strong><%= property.address %></strong></h4>
+            <h6 class="card-title"><strong>$<%= property.price %></strong>  per night</h6>
+            <p class="card-text pb-5"></p>
+            <div>
+            </div>
+            <%= link_to "See details",  property, class: "btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-3" %>
         </div>
       </div>
     <% end %>
