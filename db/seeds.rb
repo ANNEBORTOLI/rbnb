@@ -26,7 +26,7 @@ puts "Creating properties..."
     total_occupancy: rand(1..10),
     address: "Address #{i + 1}",
     price: rand(50..500),
-    summary: "bla bla bla"
+    summary: "Essa linda e espaçosa casa pé na areia em Angra dos Reis fica no condominio Caieirinha, seguranças rodando a area 24 horas entre terra e mar, trazendo conforto e segurança para sua familia"
   )
 end
 
