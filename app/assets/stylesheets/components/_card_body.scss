@@ -1,4 +1,24 @@
 .card-body {
-  background-color: red !important;
-  border-radius: 20px;
+  background-color:#FEFAE0 !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  padding-bottom: 5px !important;
+
 }
+.btn-primary {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100%);
+  padding: 0 32px;
+  border-radius: 6px;
+  color: #fff;
+  height: 48px;
+  font-size: 16px;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  text-align: center !important;
+  padding-top: 10px !important;
+
+
+ }

@@ -1,9 +1,8 @@
 <h1>My Properties</h1>
-
 <div class="container">
   <div class="row justify-content-center">
     <% @properties.each do |property| %>
-      <div class="card justify-content-center m-1" style="width: 20rem; height: 22rem">
+      <div class="card justify-content-center m-1 bg-color-card" style="width: 20rem; height: 22rem">
         <%= image_tag property.image_url, class: "card-img-top", width: 286, height: 180 %>
         <div class="card-body">
             <h6 class="card-title"><strong><%= property.address %></strong></h6>
