@@ -5,6 +5,6 @@ class Property < ApplicationRecord
   belongs_to :user
   has_many :reservations
 
-  validates :home_type, :total_occupancy, :address, :user_id, presence: true
+  validates :home_type, :total_occupancy, :image_url, :address, :user_id, presence: true
   validates :price, numericality: true
 end
