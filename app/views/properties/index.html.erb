@@ -1,7 +1,7 @@
 <h2>Check out our properties!</h2>
 <ul>
   <% @properties.each do |property| %>
-    <li><%= property.title %></li>
+    <li><%= link_to property.title, property %></li>
   <% end %>
 </ul>
  <% @properties.each do |property| %>

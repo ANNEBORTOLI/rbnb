@@ -3,6 +3,7 @@ class ReservationsController < ApplicationController
   before_action :set_reservation, only: %i[show edit update destroy]
 
   def show
+    @reservation = Reservation.find(params[:id])
   end
 
   def new
@@ -13,8 +14,11 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.new(reservation_params)
     @reservation.property = @property
     @reservation.user = current_user
+    # Calculate total_price
+    days = (@reservation.end_date - @reservation.start_date).to_i
+    @reservation.total_price = @property.price * days
     if @reservation.save
-      redirect_to properties_path
+      redirect_to reservation_path(@reservation)
     else
       render :new, status: :unprocessable_entity
     end
