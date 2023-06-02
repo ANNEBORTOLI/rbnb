@@ -8,7 +8,7 @@
             <p class="card-text my-1">Check-in: <%= @reservation.start_date %></p>
             <p class="card-text my-1">Checkout: <%= @reservation.end_date  %></p>
             <p class="card-text"> Total: <strong>R$ <%=  @reservation.total_price %></strong> </p>
-            <%= link_to "See details",  property_path, class: "btn btn-primary-azul" %>
+            <%= link_to "See details",  property_path(@reservation.property), class: "btn btn-primary-azul" %>
         </div>
       </div>
   </div>
