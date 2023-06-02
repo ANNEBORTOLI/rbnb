@@ -4,6 +4,10 @@ class PropertiesController < ApplicationController
 
   def index
     @properties = Property.all
+    if params[:query].present?
+      sql_subquery = "address ILIKE :query OR title ILIKE :query"
+      @properties = @properties.where(sql_subquery, query: "%#{params[:query]}%")
+    end
   end
 
   def show
