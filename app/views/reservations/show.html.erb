@@ -1,6 +1,15 @@
-<h1>Reservation Details</h1>
-  <p><strong>Check-in Date:</strong> <%= @reservation.start_date %></p>
-  <p><strong>Check-out Date:</strong> <%= @reservation.end_date %></p>
-  <p><strong>Total:</strong> R$ <%= @reservation.total_price %></p>
-
-<%= link_to "Back to properties", root_path %>
+<div class="container">
+  <div class="row justify-content-center">
+      <h3 style="text-align: center">Your Reservation</h3>
+      <div class="card justify-content-center m-1 bg-color-card" style="width: 20rem; height: 24rem">
+        <%= image_tag @reservation.property.image_url, class: "card-img-top", width: 286, height: 180 %>
+        <div class="card-body">
+            <h6 class="card-title"><strong><%= @reservation.property.address %></strong></h6>
+            <p class="card-text my-1">Check-in: <%= @reservation.start_date %></p>
+            <p class="card-text my-1">Checkout: <%= @reservation.end_date  %></p>
+            <p class="card-text"> Total: <strong>R$ <%=  @reservation.total_price %></strong> </p>
+            <%= link_to "See details",  property_path, class: "btn btn-primary-azul" %>
+        </div>
+      </div>
+  </div>
+</div>
