@@ -177,11 +177,50 @@ Property.create!(
   user: User.all.sample,
   home_type: Property::TYPES.sample,
   total_occupancy: rand(1..10),
-  address: "Recreio dos Bandeirantes, Rio de Janeiro",
+  address: "Recreio, Rio de Janeiro",
   title: "Apartamento no Recreio dos Bandeirantes",
   price: 119,
   summary: "Enjoy the sea and mountain views from the pool, lush garden and private patio leading off the living area Beautiful French Provencal stone cottage set in private indigenous garden overlooking Llandudno beach. The cottage was lovingly built with exceptional attention to detail, including stone floors, high beamed ceilings, antique light fittings, French wrought iron work and wooden shutters.",
   image_url: "https://news.airbnb.com/wp-content/uploads/sites/4/2018/08/MW4-41.jpg"
+)
+
+Property.create!(
+  user: User.all.sample,
+  home_type: Property::TYPES.sample,
+  total_occupancy: rand(1..10),
+  address: "Jardim Botânico, Rio de Janeiro",
+  title: "Jardim Botânico, pertinho do Parque Lage",
+  price: rand(50..500),
+  summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
+  Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
+  ",
+  image_url: "https://news.airbnb.com/wp-content/uploads/sites/4/2018/08/mostwishlisted-1-1.jpg"
+)
+
+Property.create!(
+  user: User.all.sample,
+  home_type: Property::TYPES.sample,
+  total_occupancy: rand(1..10),
+  address: "Peixoto, Rio de Janeiro",
+  title: "Linda propriedade no bairro Peixoto em Copacabana",
+  price: rand(50..500),
+  summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
+  Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
+  ",
+  image_url: "https://news.airbnb.com/wp-content/uploads/sites/4/2018/08/MW10-101.jpg"
+)
+
+Property.create!(
+  user: User.all.sample,
+  home_type: Property::TYPES.sample,
+  total_occupancy: rand(1..10),
+  address: "Leme, Rio de Janeiro",
+  title: "Apartamento aconchegante no Leme",
+  price: rand(50..500),
+  summary: "Regras do condomínio: não é permitido aparelhos de som em nenhuma das áreas comuns do condomínio; não é permitido copos ou garrafas de vidro na área de piscina, não é permitido que pets andem sem coleira na área comum;
+  Nao e permitido pets na area da piscina. Sempre recolher o coco dos pets .
+  ",
+  image_url: "https://news.airbnb.com/wp-content/uploads/sites/4/2018/08/MW7-7-2.jpg"
 )
 
 puts "Finished!"
