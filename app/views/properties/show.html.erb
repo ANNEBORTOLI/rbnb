@@ -1,4 +1,4 @@
-<div cointainer>
+<div class="cointainer">
 
   <div class="d-flex justify-content-end my-3 mx-5"><div>
     <% if !@property.image_url.nil?  %>
@@ -7,7 +7,8 @@
   </div>
   <div class="card-body mx-3 p-3 width: 450, height: 350">
     <h2><p class="fw-bold"><%= @property.title %></p></h2>
-    <p>Property type: <%= @property.home_type %> <p>hosted by "user first_name user_last_name"</p>
+    <p>Property type: <%= @property.home_type %></p>
+    <p>Hosted by <%=@property.user.first_name%> <%=@property.user.last_name%></p>
     <p>Address: <%= @property.address %></p>
     <p>Ocupancy: <%= @property.total_occupancy %></p>
     <p>Price/nigth: USD$ <%= @property.price %></p>

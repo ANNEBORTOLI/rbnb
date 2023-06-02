@@ -1,20 +1,22 @@
-<h1>My Reservations</h1>
-<%@user.reservations.each do |reservation|%>
-  <div class="d-flex flex-column justify-content-end my-3">
-    <div>
-      <% if !reservation.property.image_url.nil?  %>
-        <%= image_tag reservation.property.image_url, width: 450, height: 400 %>
-      <% end %>
-    </div>
+<div class="container">
+  <h1><strong>My Reservations</strong></h1>
+  <div class="card justify-content-center m-1 bg-color-card ">
 
-    <div class="card-body mx-5 p-3 width: 450, height: 350">
-      <p>Hosted by <%= @user.first_name %> <%= @user.last_name %></p>
-      <p>Check-in: <%= reservation.start_date %></p>
-      <p>Checkout: <%= reservation.end_date %></p>
-      <p>Address: <%= reservation.property.address %></p>
-      <p>Ocupancy: <%= reservation.property.total_occupancy %></p>
-      <p>Price: $ <%= reservation.property.price.to_i %> x <%= (reservation.end_date - reservation.start_date).to_i %> nights</p>
-      <p>Total price: <strong>$ <%= reservation.total_price.to_i %></strong></p>
+    <%@user.reservations.each do |reservation|%>
+    <div class="d-flex my-2 p-4">
+      <% if !reservation.property.image_url.nil?  %>
+        <%= image_tag reservation.property.image_url, width: 450, height: 300 %>
+      <% end %>
+      <div class="card-body mx-5 p-3 width: 450, height: 350">
+        <p>Hosted by <%= @user.first_name %> <%= @user.last_name %></p>
+        <p>Check-in: <%= reservation.start_date %></p>
+        <p>Checkout: <%= reservation.end_date %></p>
+        <p>Address: <%= reservation.property.address %></p>
+        <p>Ocupancy: <%= reservation.property.total_occupancy %></p>
+        <p>Price: $ <%= reservation.property.price.to_i %> x <%= (reservation.end_date - reservation.start_date).to_i %> nights</p>
+        <p>Total price: <strong>$ <%= reservation.total_price.to_i %></strong></p>
+      </div>
+    </div>
+    <% end %>
   </div>
-  <hr>
-<% end %>
+</div>
