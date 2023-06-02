@@ -1,8 +1,6 @@
 <div class="container row justify-content-center">
   <div style="width: 60rem; height: 22rem">
-
     <h1 class= "my-4">Add a new Reservation</h1>
-
   <div data-controller = "price">
     <%= simple_form_for ([@property, @reservation]) do |f| %>
       <%= f.input :start_date, input_html: { class: 'form-control', value: Date.today.to_s }, html5: true %>
@@ -14,3 +12,4 @@
     <% end %>
   </div>
 </div>
+
